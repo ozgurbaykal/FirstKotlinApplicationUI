@@ -5,3 +5,9 @@
 | Login Screen  | Register Screen |  Tutorial Screen Page 1 | Tutorial Screen Page 2 |
 | ------------- | ------------- |------------- | ------------- |
 | ![image](https://github.com/ozgurbyk/FirstKotlinApplicationUI/assets/83478420/cfa2f4a3-9762-48b1-b714-ab1f1f092c58)  | ![image](https://github.com/ozgurbyk/FirstKotlinApplicationUI/assets/83478420/d6b9d746-d605-439c-9c68-24129accbeb4)  | ![image](https://github.com/ozgurbyk/FirstKotlinApplicationUI/assets/83478420/2a30daf8-6292-4b18-adba-db489462083a) | ![image](https://github.com/ozgurbyk/FirstKotlinApplicationUI/assets/83478420/aadc1a63-6cb1-4c46-8ccd-6e356e5af786)|
+
+
+| UI/UX DESIGN VIDEO  |
+| ------------- | 
+| <video src="https://github.com/ozgurbyk/FirstKotlinApplicationUI/assets/83478420/9c1bffd4-21b0-40de-a695-7036637c62c0">  |
+
