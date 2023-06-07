@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_white"
+    tools:context=".TutorialPage1">
+
+    <LinearLayout
+        android:id="@+id/linearTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tutorial_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="An Evolving \n collection of treatments"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="The Ordinary is born to disallow commodity to be disguised as ingenuity. The Ordinary is Clinical formulations with integrity."
+            android:textAlignment="center"
+            android:textColor="@color/custom_green" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/myRoundButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nextPageTutorial"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/round_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

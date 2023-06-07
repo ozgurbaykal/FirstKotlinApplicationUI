@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <EditText
+                android:id="@+id/nameFieldInRegisterPage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/custom_person_icon_focused"
+                android:nextFocusDown="@+id/surnameFieldInRegisterPage"
+                android:hint="Name"
+                android:drawablePadding="22dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="22dp"/>
+
+            <EditText
+                android:id="@+id/surnameFieldInRegisterPage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/custom_person_icon_focused"
+                android:drawablePadding="22dp"
+                android:hint="Surname"
+                android:paddingStart="12dp"
+                android:paddingEnd="22dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/emailFieldInRegisterPage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/custom_mail_icon_focused"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/passwordFieldInRegisterPage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/custom_password_icon_focused"
+            android:drawablePadding="12dp"
+            android:hint="Password"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+        <EditText
+            android:id="@+id/passwordAgainFieldInRegisterPage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/custom_password_icon_focused"
+            android:drawablePadding="12dp"
+            android:hint="Password Again"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="I have read and agree to the "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/app_main_color_green"
+                android:text="Privacy Policy"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/privacyPolicyCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:backgroundTint="@color/app_main_color_green"
+                app:cornerRadius="12dp"
+                app:strokeColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="SIGN UP"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Or"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_shape" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:backgroundTint="@color/custom_green_lighter"
+            app:cornerRadius="12dp"
+            app:strokeColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="LOG IN"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

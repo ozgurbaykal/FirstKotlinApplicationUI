@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstMainActivity">
+
+    <View
+        android:id="@+id/topWaweView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/wawe_top" />
+
+    <!-- res/layout/example_activity.xml -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/login_fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomWaweView"
+        android:layout_below="@+id/topWaweView"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <View
+        android:id="@+id/bottomWaweView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/wawe_bottom" />
+
+</RelativeLayout>
